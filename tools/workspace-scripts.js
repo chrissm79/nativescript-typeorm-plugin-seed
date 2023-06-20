@@ -77,13 +77,6 @@ module.exports = {
 					description: '@chris7519/typeorm-compat: Build',
 				},
 			},
-			// @chris7519/test
-			test: {
-				build: {
-					script: 'nx run test:build.all',
-					description: '@chris7519/test: Build',
-				},
-			},
 			// @chris7519/typeorm
 			typeorm: {
 				build: {
@@ -115,10 +108,6 @@ module.exports = {
 			'typeorm-compat': {
 				script: 'nx run typeorm-compat:focus',
 				description: 'Focus on @chris7519/typeorm-compat',
-			},
-			test: {
-				script: 'nx run test:focus',
-				description: 'Focus on @chris7519/test',
 			},
 			typeorm: {
 				script: 'nx run typeorm:focus',

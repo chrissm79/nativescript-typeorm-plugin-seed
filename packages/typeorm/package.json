@@ -1,6 +1,6 @@
 {
   "name": "@chris7519/nativescript-typeorm-plugin",
-  "version": "1.0.2",
+  "version": "1.0.7",
   "description": "Nativescript + TypeORM",
   "main": "index",
   "typings": "index.d.ts",

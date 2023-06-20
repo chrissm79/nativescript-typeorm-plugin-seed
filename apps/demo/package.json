@@ -6,7 +6,8 @@
   "dependencies": {
     "@nativescript/core": "file:../../node_modules/@nativescript/core",
     "@nativescript/nativescript-downloader": "file:../../packages/nativescript-downloader",
-    "@chris7519/typeorm": "file:../../packages/typeorm"
+    "@chris7519/typeorm": "file:../../packages/typeorm",
+    "@chris7519/nativescript-typeorm-plugin": "file:../../packages/typeorm"
   },
   "devDependencies": {
     "@nativescript/android": "8.0.0",

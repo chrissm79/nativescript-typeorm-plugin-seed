@@ -1,6 +1,5 @@
 import { Component, NgZone } from '@angular/core';
 import { DemoSharedTest } from '@demo/shared';
-import {} from '@chris7519/test';
 
 @Component({
 	selector: 'demo-test',

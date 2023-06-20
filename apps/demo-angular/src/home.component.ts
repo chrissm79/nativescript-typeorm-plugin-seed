@@ -7,9 +7,6 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 	demos = [
 	{
-		name: 'test'
-	},
-	{
 		name: 'typeorm'
 	}
 ];

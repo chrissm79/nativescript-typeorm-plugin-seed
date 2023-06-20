@@ -42,7 +42,7 @@ module.exports = (webpack) => {
 		config.plugin('ProvidePlugin|Polyfills').use(ProvidePlugin, [
 			{
 				Buffer: [require.resolve('buffer/'), 'Buffer'],
-				crypto: [require.resolve(`${__dirname}/shim/crypto-browserify.js`), 'crypto'],
+				crypto: require.resolve(`${__dirname}/shim/crypto-browserify.js`),
 			},
 		]);
 
