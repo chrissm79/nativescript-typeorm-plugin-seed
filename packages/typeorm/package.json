@@ -1,6 +1,6 @@
 {
-  "name": "@pekevski/typeorm",
-  "version": "1.0.8",
+  "name": "@chris7519/nativescript-typeorm-plugin",
+  "version": "1.0.1",
   "description": "Nativescript + TypeORM",
   "main": "index",
   "typings": "index.d.ts",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pekevski/nativescript-plugin-seed.git"
+    "url": "https://github.com/chrissm79/nativescript-typeorm-plugin-seed.git"
   },
   "keywords": [
     "NativeScript",
@@ -22,14 +22,14 @@
     "Android"
   ],
   "author": {
-    "name": "Daniel Pekevski",
-    "email": "dpekevski@gmail.com"
+    "name": "Christopher Moore",
+    "email": "chris@nuwavecommerce.com"
   },
   "bugs": {
-    "url": "https://github.com/pekevski/nativescript-plugin-seed/issues"
+    "url": "https://github.com/chrissm79/nativescript-typeorm-plugin-seed/issues"
   },
   "license": "Apache-2.0",
-  "homepage": "https://github.com/pekevski/nativescript-plugin-seed",
+  "homepage": "https://github.com/chrissm79/nativescript-typeorm-plugin-seed",
   "readmeFilename": "README.md",
   "bootstrapper": "@nativescript/plugin-seed",
   "devDependencies": {

@@ -5,6 +5,9 @@
     "paths": {
       "@pekevski/*": [
         "../../packages/*"
+      ],
+      "@chris7519/*": [
+        "../../packages/*"
       ]
     }
   }

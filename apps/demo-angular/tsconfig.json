@@ -15,6 +15,9 @@
       ],
       "@pekevski/*": [
         "../../dist/packages/*"
+      ],
+      "@chris7519/*": [
+        "../../dist/packages/*"
       ]
     }
   },
