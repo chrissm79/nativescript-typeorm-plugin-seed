@@ -57,45 +57,45 @@ module.exports = {
 			},
 		},
 		'⚙️': {
-			script: `npx cowsay "@pekevski/* packages will keep your ⚙️ cranking"`,
-			description: '_____________  @pekevski/*  _____________',
+			script: `npx cowsay "@chris7519/* packages will keep your ⚙️ cranking"`,
+			description: '_____________  @chris7519/*  _____________',
 		},
 		// packages
 		// build output is always in dist/packages
-		'@pekevski': {
-			// @pekevski/nativescript-downloader
+		'@chris7519': {
+			// @chris7519/nativescript-downloader
 			'nativescript-downloader': {
 				build: {
 					script: 'nx run nativescript-downloader:build.all',
-					description: '@pekevski/nativescript-downloader: Build',
+					description: '@chris7519/nativescript-downloader: Build',
 				},
 			},
-			// @pekevski/typeorm-compat
+			// @chris7519/typeorm-compat
 			'typeorm-compat': {
 				build: {
 					script: 'nx run typeorm-compat:build.all',
-					description: '@pekevski/typeorm-compat: Build',
+					description: '@chris7519/typeorm-compat: Build',
 				},
 			},
-			// @pekevski/test
-			'test': {
+			// @chris7519/test
+			test: {
 				build: {
 					script: 'nx run test:build.all',
-					description: '@pekevski/test: Build',
+					description: '@chris7519/test: Build',
 				},
 			},
-			// @pekevski/typeorm
-			'typeorm': {
+			// @chris7519/typeorm
+			typeorm: {
 				build: {
 					script: 'nx run typeorm:build.all',
-					description: '@pekevski/typeorm: Build',
+					description: '@chris7519/typeorm: Build',
 				},
 			},
-			// @pekevski/daniel
-			'daniel': {
+			// @chris7519/daniel
+			daniel: {
 				build: {
 					script: 'nx run daniel:build.all',
-					description: '@pekevski/daniel: Build',
+					description: '@chris7519/daniel: Build',
 				},
 			},
 			'build-all': {
@@ -110,23 +110,23 @@ module.exports = {
 		focus: {
 			'nativescript-downloader': {
 				script: 'nx run nativescript-downloader:focus',
-				description: 'Focus on @pekevski/nativescript-downloader',
+				description: 'Focus on @chris7519/nativescript-downloader',
 			},
 			'typeorm-compat': {
 				script: 'nx run typeorm-compat:focus',
-				description: 'Focus on @pekevski/typeorm-compat',
+				description: 'Focus on @chris7519/typeorm-compat',
 			},
-			'test': {
+			test: {
 				script: 'nx run test:focus',
-				description: 'Focus on @pekevski/test',
+				description: 'Focus on @chris7519/test',
 			},
-			'typeorm': {
+			typeorm: {
 				script: 'nx run typeorm:focus',
-				description: 'Focus on @pekevski/typeorm',
+				description: 'Focus on @chris7519/typeorm',
 			},
-			'daniel': {
+			daniel: {
 				script: 'nx run daniel:focus',
-				description: 'Focus on @pekevski/daniel',
+				description: 'Focus on @chris7519/daniel',
 			},
 			reset: {
 				script: 'nx run all:focus',

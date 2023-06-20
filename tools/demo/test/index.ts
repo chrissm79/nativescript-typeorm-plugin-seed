@@ -1,9 +1,8 @@
 import { DemoSharedBase } from '../utils';
-import {  } from '@pekevski/test';
+import {} from '@chris7519/test';
 
 export class DemoSharedTest extends DemoSharedBase {
-
-  testIt() {
-    console.log('test test!');
-  }
+	testIt() {
+		console.log('test test!');
+	}
 }

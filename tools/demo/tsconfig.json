@@ -1,14 +1,10 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@pekevski/*": [
-        "../../packages/*"
-      ],
-      "@chris7519/*": [
-        "../../packages/*"
-      ]
-    }
-  }
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@chris7519/*": ["../../packages/*"],
+			"@chris7519/*": ["../../packages/*"]
+		}
+	}
 }

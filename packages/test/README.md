@@ -1,7 +1,7 @@
-# @pekevski/test
+# @chris7519/test
 
 ```javascript
-ns plugin add @pekevski/test
+ns plugin add @chris7519/test
 ```
 
 ## Usage

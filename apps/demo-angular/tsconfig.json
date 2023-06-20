@@ -1,29 +1,14 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-    "rootDirs": [
-      ".",
-      "../.."
-    ],
-    "baseUrl": ".",
-    "paths": {
-      "~/*": [
-        "src/*"
-      ],
-      "@demo/shared": [
-        "../../tools/demo/index.ts"
-      ],
-      "@pekevski/*": [
-        "../../dist/packages/*"
-      ],
-      "@chris7519/*": [
-        "../../dist/packages/*"
-      ]
-    }
-  },
-  "files": [
-    "./references.d.ts",
-    "./src/main.ts",
-    "./src/polyfills.ts"
-  ]
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"rootDirs": [".", "../.."],
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["src/*"],
+			"@demo/shared": ["../../tools/demo/index.ts"],
+			"@chris7519/*": ["../../dist/packages/*"],
+			"@chris7519/*": ["../../dist/packages/*"]
+		}
+	},
+	"files": ["./references.d.ts", "./src/main.ts", "./src/polyfills.ts"]
 }

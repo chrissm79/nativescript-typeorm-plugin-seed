@@ -1,24 +1,13 @@
 {
-  "extends": "../../tsconfig.base.json",
-  "compilerOptions": {
-    "rootDirs": [
-      ".",
-      "../.."
-    ],
-    "baseUrl": ".",
-    "paths": {
-      "~/*": [
-        "src/*"
-      ],
-      "@demo/shared": [
-        "../../tools/demo/index.ts"
-      ],
-      "@pekevski/*": [
-        "../../packages/*"
-      ],
-      "@chris7519/*": [
-        "../../packages/*"
-      ]
-    }
-  }
+	"extends": "../../tsconfig.base.json",
+	"compilerOptions": {
+		"rootDirs": [".", "../.."],
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["src/*"],
+			"@demo/shared": ["../../tools/demo/index.ts"],
+			"@chris7519/*": ["../../packages/*"],
+			"@chris7519/*": ["../../packages/*"]
+		}
+	}
 }

@@ -1,6 +1,6 @@
 {
   "name": "@chris7519/nativescript-typeorm-plugin",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Nativescript + TypeORM",
   "main": "index",
   "typings": "index.d.ts",
@@ -33,15 +33,15 @@
   "readmeFilename": "README.md",
   "bootstrapper": "@nativescript/plugin-seed",
   "devDependencies": {
-    "@nativescript/webpack": "^5.0.0",
-    "@types/app-root-path": "^1.2.4",
+    "@nativescript/webpack": "^5.0.15",
     "@types/node": "^16.9.1",
-    "typescript": "^4.4.3"
+    "typescript": "^5.1.3"
   },
   "peerDependencies": {
     "typeorm": ">=0.2.39"
   },
   "dependencies": {
+    "@types/app-root-path": "^1.2.1",
     "assert": "*",
     "buffer": "*",
     "events": "*",

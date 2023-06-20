@@ -1,5 +1,5 @@
-- [@pekevski/test](packages/test/README.md)
-- [@pekevski/typeorm](packages/typeorm/README.md)
+- [@chris7519/test](packages/test/README.md)
+- [@chris7519/typeorm](packages/typeorm/README.md)
 
 # How to use?
 

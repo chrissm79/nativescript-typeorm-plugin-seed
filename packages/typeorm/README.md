@@ -1,10 +1,12 @@
-# @pekevski/typeorm
+# @chris7519/typeorm
 
 ## Usage
+
 1. Install the dependencies for nativescript sqlite and typeorm in your Nativescript project.
+
     ```bash
     npm i typeorm reflect-metadata nativescript-sqlite
-    ns plugin add @pekevski/typeorm
+    ns plugin add @chris7519/typeorm
     ```
 
 2. Create a database connection in your applications entry point eg. `main.ts`
