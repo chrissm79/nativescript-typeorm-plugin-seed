@@ -1,4 +1,4 @@
-const { ProvidePlugin } = require('webpack');
+const { ProvidePlugin, ContextReplacementPlugin } = require('webpack');
 const fs = require('fs');
 const path = require('path');
 
@@ -12,6 +12,7 @@ module.exports = (webpack) => {
 	webpack.chainWebpack((config) => {
 		config.resolve.alias.set('supports-color', 'supports-color/browser');
 		config.resolve.alias.set('app-root-path', `${__dirname}/shim/app-root-path`);
+		config.resolve.alias.set('crypto', `${__dirname}/shim/crypto-browserify.js`);
 
 		// Add fallbacks for packages that TypeORM requires to work
 		// based off webpack v4 fallbacks https://webpack.js.org/configuration/resolve/#resolvefallback
@@ -24,6 +25,7 @@ module.exports = (webpack) => {
 				events: require.resolve('events/'),
 				timers: require.resolve('timers-browserify'),
 				tty: require.resolve('tty-browserify'),
+				crypto: require.resolve('@nativescript/core/'),
 				fs: require.resolve('@nativescript/core/'),
 				module: require.resolve('@nativescript/core/'),
 				path: require.resolve('path-browserify'),
@@ -35,9 +37,16 @@ module.exports = (webpack) => {
 			})
 		);
 
-		config.set('externals', [...config.get('externals'), 'react-native-sqlite-storage', 'mongodb', '@sap/hana-client', 'hdb-pool', 'mysql', 'mysql2', 'oracledb', 'pg', 'pg-native', 'pg-query-stream', 'typeorm-aurora-data-api-driver', 'redis', 'ioredis', 'better-sqlite3', 'sqlite3', 'sql.js', 'mssql']);
+		config.set('externals', [...config.get('externals'), 'react-native-sqlite-storage', 'mongodb', '@sap/hana-client', 'hdb-pool', 'mysql', 'mysql2', 'oracledb', 'pg', 'pg-native', 'pg-query-stream', 'typeorm-aurora-data-api-driver', 'redis', 'ioredis', 'better-sqlite3', 'sqlite3', 'sql.js', 'mssql', '@google-cloud/spanner']);
 
-		config.plugin('ProvidePlugin|Polyfills').use(ProvidePlugin, [{ Buffer: [require.resolve('buffer/'), 'Buffer'] }]);
+		config.plugin('ProvidePlugin|Polyfills').use(ProvidePlugin, [
+			{
+				Buffer: [require.resolve('buffer/'), 'Buffer'],
+				crypto: [require.resolve(`${__dirname}/shim/crypto-browserify.js`), 'crypto'],
+			},
+		]);
+
+		config.plugin('ContextReplacementPlugin').use(ContextReplacementPlugin, [/typeorm/]);
 
 		config.plugin('DefinePlugin').tap((args) => {
 			Object.assign(args[0], {

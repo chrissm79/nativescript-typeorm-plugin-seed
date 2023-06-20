@@ -132,7 +132,8 @@
           "options": {
             "commands": [
               "nx run typeorm:build",
-              "node tools/scripts/build-finish.ts typeorm"
+              "node tools/scripts/build-finish.ts typeorm",
+              "cp packages/typeorm/shim/crypto-browserify.js dist/packages/typeorm/shim/crypto-browserify.js"
             ],
             "parallel": false
           }
